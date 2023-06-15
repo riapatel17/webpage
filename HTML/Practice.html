@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .myDiv::before {
+        content: "";
+        /* position: absolute; */
+        display: inline-block;
+        height: 200px;
+        width: 200px;
+        background-color: pink;
+        margin-bottom: 50px;
+    }
+
+    .myDiv::after {
+        content: "";
+        height: 200px;
+        width: 200px;
+        background: greenyellow;
+        border-radius: 100px;
+        display: inline-block;
+        /* position: absolute; */
+        /* margin-left: 220px; */
+        margin-bottom: 50px;
+
+    }
+
+    /* Blog Practice   */
+
+    body {
+        font-family: "SF Pro Text"
+    }
+
+    .blog {
+        position: absolute;
+        height: 783px;
+        width: 1351px;
+        /* border: 1px solid black; */
+    }
+
+    /* header section */
+    .header-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #211E1E;
+    }
+
+    .header-section h1 {
+        font-size: 33px;
+        font-weight: 700;
+        line-height: 39px;
+        letter-spacing: 1.3px;
+        margin-top: 66px;
+        margin-bottom: 20px;
+    }
+
+    .header-section p {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0.74px;
+        margin-bottom: 60px;
+    }
+
+    /* columns section */
+
+    .column {
+        display: flex;
+        margin-left: 38px;
+        margin-right: 38px;
+        margin-bottom: 75px;
+    }
+
+    .content-img {
+        height: 226px;
+        width: 300px;
+        background-color: #F3F3F3;
+    }
+
+    .blog-column {
+        height: 370px;
+        width: 300px;
+        margin-right: 25px;
+        background: #FBFBFB;
+    }
+
+    .content-text {
+        margin-left: 20px;
+        margin-right: 37px;
+        margin-bottom: 26px;
+
+    }
+
+    .content-text p {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19px;
+        letter-spacing: 0.32px;
+        text-align: left;
+        color: #211E1E;
+        margin-top: 25px;
+    }
+
+    .primary-btn {
+        width: 87px;
+        height: 30px;
+        margin-top: 26px;
+        border: 0.8px solid #959595;
+        border-radius: 2px;
+
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0.743px;
+        color: #959595;
+    }
+
+    .secondary-btn {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .secondary-btn button {
+        height: 43px;
+        width: 122px;
+        background: #227840;
+        border: 1.5px solid #227840;
+        border-radius: 6px;
+
+        font-family: " SF UI  Text";
+        font-size: 11px;
+        line-height: 13px;
+        letter-spacing: 0.275px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+</style>
+
+<body>
+    <div class="myDiv"></div>
+
+    <!-- Blog Practice  -->
+
+    <div class="blog">
+        <header class="header-section">
+            <h1>Blog</h1>
+            <p class="header-text">Insert Blog short bio copy</p>
+        </header>
+        <div class="column">
+            <div class="blog-column">
+                <div class="content-img">
+                </div>
+                <div class="content-text">
+                    <p>Papa & Barkley back in stock along with many options!</p>
+                    <button class="primary-btn">Read More</button>
+                </div>
+            </div>
+            <div class="blog-column">
+                <div class="content-img">
+                </div>
+                <div class="content-text">
+                    <p>Papa & Barkley back in stock along with many options!</p>
+                    <button class="primary-btn">Read More</button>
+                </div>
+            </div>
+            <div class="blog-column">
+                <div class="content-img">
+                </div>
+                <div class="content-text">
+                    <p>Papa & Barkley back in stock along with many options!</p>
+                    <button class="primary-btn">Read More</button>
+                </div>
+            </div>
+            <div class="blog-column">
+                <div class="content-img">
+                </div>
+                <div class="content-text">
+                    <p>Papa & Barkley back in stock along with many options!</p>
+                    <button class="primary-btn">Read More</button>
+                </div>
+            </div>
+        </div>
+        <div class="secondary-btn">
+            <button>View More</button>
+        </div>
+    </div>
+</body>
+
+</html>
