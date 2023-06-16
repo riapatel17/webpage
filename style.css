@@ -40,7 +40,6 @@
 }
 
 .product-btn {
-
     height: 43px;
     width: 155px;
     background: #227840;
@@ -74,8 +73,8 @@
 }
 
 .product-img {
-    height: 183.478px;
-    width: 181.916px;
+    max-height: 183.478px;
+    max-width: 181.916px;
     align-items: center;
     margin: 24.98px 24.2px 23.42px 25.7px;
 }
