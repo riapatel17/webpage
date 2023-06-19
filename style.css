@@ -111,9 +111,13 @@
 
 /* Blog Practice   */
 
+.container {
+	position: relative;
+	margin: 0 auto;
+}
 
 .blog {
-	position: absolute;
+	position: relative;
 	min-height: 783px;
 	max-width: 1351px;
 	/* border: 1px solid black; */
@@ -148,27 +152,21 @@
 
 .column {
 	display: flex;
-	margin-left: 38px;
-	margin-right: 38px;
 	margin-bottom: 75px;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .blog-column {
-	height: 370px;
 	width: 300px;
 	background: #FBFBFB;
-	margin-right: 25px;
-}
-.blog-column:last-child {
-	margin-right: 0;
+	padding: 15px;
+	flex: 0 0 300px;
 }
 
 .content-img {
-	height: 226px;
-	width: 300px;
+	width: 100%;
 	/* background-color: #F3F3F3; */
-
 }
 
 .content-img img {
@@ -229,10 +227,6 @@
 	color: #FFFFFF;
 }
 
-.container {
-	position: relative;
-	margin: 0 auto;
-}
 
 /* @media screen and(max-width:991px) {
 
