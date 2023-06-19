@@ -11,6 +11,11 @@ function increment() {
 function decrement() {
 	counter = counter - 1;
 	document.getElementById("counter-value").innerText = counter;
+
+	if (counter < 0) {
+		counter = 0;
+		document.getElementById("counter-value").innerText = counter;
+	}
 }
 
 // Reset
@@ -18,6 +23,3 @@ function reset() {
 	counter = 0;
 	document.getElementById("counter-value").innerText = counter;
 }
-
-
-
