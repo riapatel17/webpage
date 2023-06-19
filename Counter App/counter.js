@@ -15,6 +15,7 @@ function decrement() {
 	if (counter < 0) {
 		counter = 0;
 		document.getElementById("counter-value").innerText = counter;
+		alert("you can't go negative.");
 	}
 }
 
