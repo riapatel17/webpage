@@ -1,34 +1,21 @@
-let counter = 0;
-document.getElementById("counter-value").innerText = counter;
+const count = document.getElementById("counter-value");
 
 // Increment
-
 document.getElementById("increment-btn").addEventListener("click", increment);
-
 function increment() {
-	counter = counter + 1;
-	document.getElementById("counter-value").innerText = counter;
+	count.innerHTML++;
 }
 
-// decrement
-
+// Decrement
 document.getElementById("decrement-btn").addEventListener("click", decrement);
-
 function decrement() {
-	counter = counter - 1;
-	document.getElementById("counter-value").innerText = counter;
-
-	if (counter < 0) {
-		counter = 0;
-		document.getElementById("counter-value").innerText = counter;
+	count.innerHTML--;
+	if (count.innerHTML == -1) {
 		alert("You can't go negative.");
 	}
 }
 
 // Reset
 function reset() {
-	counter = 0;
-	document.getElementById("counter-value").innerText = counter;
+	count.innerHTML = 0;
 }
-
-
