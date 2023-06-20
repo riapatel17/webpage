@@ -1,17 +1,26 @@
 const count = document.getElementById("counter-value");
+const incrementBtn = document.getElementById("increment-btn");
+const decrementBtn = document.getElementById("decrement-btn");
+let showAlert = true;
 
 // Increment
-document.getElementById("increment-btn").addEventListener("click", increment);
+incrementBtn.addEventListener("click", increment);
 function increment() {
 	count.innerHTML++;
 }
 
+/* 
+ difference between == and ===
+*/
+
 // Decrement
-document.getElementById("decrement-btn").addEventListener("click", decrement);
+decrementBtn.addEventListener("click", decrement);
 function decrement() {
-	count.innerHTML--;
-	if (count.innerHTML == -1) {
+	if (showAlert && count.innerHTML === '0') {
 		alert("You can't go negative.");
+		showAlert = false;
+	} else {
+		count.innerHTML--;
 	}
 }
 
