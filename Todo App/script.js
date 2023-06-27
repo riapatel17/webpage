@@ -2,6 +2,9 @@ const input = document.querySelector('#todo-input');
 
 document.querySelector('#submit').addEventListener('click', () => {
 	const inputData = input.value;
+	if (input.value === '') {
+		alert("Please Enter Task");
+	}
 	input.value = "";
 
 	// creating todo item element
@@ -40,6 +43,7 @@ document.querySelector('#submit').addEventListener('click', () => {
 
 	todo_el.appendChild(todo_actions_el);
 	console.log(todo_el)
+
 	// add the todo-item to lists
 	document.querySelector('.todo-lists').appendChild(todo_el);
 
