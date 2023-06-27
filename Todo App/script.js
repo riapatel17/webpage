@@ -76,6 +76,4 @@ document.querySelector('#submit').addEventListener('click', () => {
 
 	}
 	input.value = "";
-
-
 })
